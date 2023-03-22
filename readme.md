@@ -2,7 +2,7 @@
 
 1. init a nodejs project, using the ff
    - nodejs 16/18 (volta/fnm)
-   - yarn
+   - yarn/npm
 1. experiment with javascript in nodejs
 1. serve files
 1. play with request response
