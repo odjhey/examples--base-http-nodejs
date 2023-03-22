@@ -20,4 +20,10 @@ got
 ### extra milestone
 - use external modules like
   - use `expressj`/`fastify`
-  - use `pug`/`jade`/any templating engine
+  - use `pug`/`jade`/any templating engine 
+- apply other HTTP methods,
+  - create data using POST
+  - read data using GET
+  - delete data with DELETE
+  - update a field with PATCH
+  - replace info with PUT
