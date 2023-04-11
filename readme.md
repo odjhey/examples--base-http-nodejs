@@ -34,8 +34,9 @@ got
 - move to external `.js` files
 
 ### next steps
-- move from file to database, sqlite & prisma
+- move from file to database, sqlite3 - see https://github.com/TryGhost/node-sqlite3
 - improve solution
-- learn graphql
+
 
 ### redwood time
+- prereq: learn graphql and prisma
