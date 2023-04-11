@@ -17,7 +17,7 @@ breaking bad
 got
 ```
 
-### extra milestone
+### milestones
 - use external modules like
   - use `expressj`/`fastify`
   - use `pug`/`jade`/any templating engine 
@@ -27,3 +27,15 @@ got
   - delete data with DELETE
   - update a field with PATCH
   - replace info with PUT
+  
+### refinements
+- use html forms <form>
+- add css styles, external css file
+- move to external `.js` files
+
+### next steps
+- move from file to database, sqlite & prisma
+- improve solution
+- learn graphql
+
+### redwood time
