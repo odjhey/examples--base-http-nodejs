@@ -29,7 +29,7 @@ got
   - replace info with PUT
   
 ### refinements
-- use html forms <form>
+- use plain html forms <form>
 - add css styles, external css file
 - move to external `.js` files
 
