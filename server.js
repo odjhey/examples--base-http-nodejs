@@ -1,8 +1,18 @@
 const http = require('node:http')
 const fs = require('node:fs')
+const path = require('node:path')
 
 const server = http.createServer(
     function handle(req, res) {
+
+        // serve static files
+        if (req.url.startsWith('/public')) {
+            // serve static files
+            const filePath = path.join(__dirname, req.url);
+            const f = fs.readFileSync(filePath)
+            res.end(f)
+            return
+        }
 
         switch (req.url) {
             case '/':
@@ -13,10 +23,6 @@ const server = http.createServer(
             case '/favicon.ico':
                 const f2 = fs.readFileSync('./public/favicon.ico')
                 res.end(f2)
-                break;
-            case '/public/script.js':
-                const f3 = fs.readFileSync('./public/script.js')
-                res.end(f3)
                 break;
         }
     }
