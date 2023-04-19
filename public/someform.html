@@ -1,0 +1,33 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="notifs"></div>
+    <form action="/actions/createsomething" method="post">
+
+        <label for="name">name</label>
+        <input name="name"></input>
+
+        <label for="stuff">stuff</label>
+        <input name="stuff"></input>
+
+        <button type="submit">submit</button>
+    </form>
+
+    <script>
+        const notifs = document.getElementById("notifs");
+
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.has("success")) {
+            notifs.innerHTML = "success";
+        } else if (params.has("error")) {
+            notifs.innerHTML = "error";
+        }
+    </script>
+
+</body>
+
+
+</html>
